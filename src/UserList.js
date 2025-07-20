@@ -8,7 +8,7 @@ export default function UserList({ users, onEdit, onDelete }) {
           <th>Name</th>
           <th>Email</th>
           <th>Date of Birth</th>
-          {/* <th>Created At</th> */}
+   
           <th>Actions</th>
         </tr>
       </thead>
@@ -21,7 +21,7 @@ export default function UserList({ users, onEdit, onDelete }) {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.dob}</td>
-              {/* <td>{user.created_at}</td> */}
+            
               <td>
                 <button onClick={() => onEdit(user)}>Edit</button>
                 <button onClick={() => onDelete(user.id)} style={{ marginLeft: 8 }}>Delete</button>

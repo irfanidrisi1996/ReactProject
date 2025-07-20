@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Fetch users
+
   const fetchUsers = async () => {
     setLoading(true);
     setError('');
@@ -31,7 +31,7 @@ function App() {
     fetchUsers();
   }, []);
 
-  // Add user
+
   const handleAddUser = async (user) => {
     setError('');
     try {
@@ -48,12 +48,12 @@ function App() {
     }
   };
 
-  // Edit user
+ 
   const handleEditUser = (user) => {
     setEditingUser(user);
   };
 
-  // Update user
+
   const handleUpdateUser = async (user) => {
     setError('');
     try {
@@ -71,7 +71,7 @@ function App() {
     }
   };
 
-  // Delete user
+
   const handleDeleteUser = async (id) => {
     setError('');
     try {
